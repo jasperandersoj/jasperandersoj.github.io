@@ -194,7 +194,11 @@
       }
 
       document.title = `${record.title || record.name || "Untitled"} | Jasper Anderson`;
-      content.querySelectorAll("[data-field]").forEach((element) => setField(element, record));
+      content.querySelectorAll("[data-field]").forEach((element) => {
+        if (!element.closest("[data-cms-list]")) {
+          setField(element, record);
+        }
+      });
       renderRepeats(record);
       state.hidden = true;
       content.style.display = "";
