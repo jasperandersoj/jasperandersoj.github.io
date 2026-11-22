@@ -24,6 +24,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 </style>
+  <script src="js/cms-list.js" defer></script>
 </head>
 <body>
   <div class="page-wrapper">
@@ -83,23 +84,23 @@
               <h2>Explore</h2>
             </div>
             <div class="spacer-xlarge is-mobile-small"></div>
-            <div class="work-list_wrapper w-dyn-list">
+            <div class="work-list_wrapper w-dyn-list" data-cms-list data-json="data/works.json" data-detail-page="detail_works.html">
               <div role="list" class="work-list_list w-dyn-items">
                 <div role="listitem" class="work-list_item w-dyn-item">
-                  <a aria-label="link to project" href="#" class="work-list_block w-inline-block">
+                  <a aria-label="link to work category" href="#" class="work-list_block w-inline-block" data-field="link">
                     <div class="work-list_images-wrap">
-                      <div class="work-list_image-main"><img animation="scale" loading="lazy" alt="" src="https://cdn.prod.website-files.com/684a11845c7dd0b4b7745cd9/684f4b4e46f43abece21d9e6_E1-1170x780%20(1).jpg" class="work-list_img-main w-dyn-bind-empty"></div>
-                      <div class="work-list_image-second"><img loading="lazy" src="https://cdn.prod.website-files.com/684a11845c7dd0b4b7745cd9/684f4efab49956b356a8729c_gradient.png" alt="" class="work-list_img-second w-dyn-bind-empty"></div>
+                      <div class="work-list_image-main"><img animation="scale" loading="lazy" alt="" src="" class="work-list_img-main w-dyn-bind-empty" data-field="coverImage"></div>
+                      <div class="work-list_image-second"><img loading="lazy" src="" alt="" class="work-list_img-second w-dyn-bind-empty" data-field="secondaryImage"></div>
                     </div>
                     <div class="work-list_infos">
-                      <h3 class="heading-style-h6 w-dyn-bind-empty"></h3>
-                      <div class="work-list_desc w-dyn-bind-empty"></div>
+                      <h3 class="heading-style-h6 w-dyn-bind-empty" data-field="title"></h3>
+                      <div class="work-list_desc w-dyn-bind-empty" data-field="summary"></div>
                     </div>
                   </a>
                 </div>
               </div>
-              <div class="w-dyn-empty">
-                <div>No items found.</div>
+              <div id="explore-works-empty" class="w-dyn-empty" data-cms-empty style="display:none">
+                <div data-cms-empty-message>No items found.</div>
               </div>
             </div>
           </div>

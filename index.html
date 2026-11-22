@@ -24,6 +24,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 </style>
+  <script src="js/cms-list.js" defer></script>
 </head>
 <body>
   <div class="page-wrapper">
@@ -155,23 +156,23 @@
               <h2>Explore</h2>
             </div>
             <div class="spacer-xlarge is-mobile-small"></div>
-            <div class="work-list_wrapper w-dyn-list">
+            <div class="work-list_wrapper w-dyn-list" data-cms-list data-json="data/works.json" data-detail-page="detail_works.html">
               <div role="list" class="work-list_list w-dyn-items">
                 <div role="listitem" class="work-list_item w-dyn-item">
-                  <a aria-label="link to project" href="#" class="work-list_block w-inline-block">
+                  <a aria-label="link to work category" href="#" class="work-list_block w-inline-block" data-field="link">
                     <div class="work-list_images-wrap">
-                      <div class="work-list_image-main"><img animation="scale" loading="lazy" alt="" src="https://cdn.prod.website-files.com/684a11845c7dd0b4b7745cd9/684f4b4e46f43abece21d9e6_E1-1170x780%20(1).jpg" class="work-list_img-main w-dyn-bind-empty"></div>
-                      <div class="work-list_image-second"><img loading="lazy" src="https://cdn.prod.website-files.com/684a11845c7dd0b4b7745cd9/684f4efab49956b356a8729c_gradient.png" alt="" class="work-list_img-second w-dyn-bind-empty"></div>
+                      <div class="work-list_image-main"><img animation="scale" loading="lazy" alt="" src="" class="work-list_img-main w-dyn-bind-empty" data-field="coverImage"></div>
+                      <div class="work-list_image-second"><img loading="lazy" src="" alt="" class="work-list_img-second w-dyn-bind-empty" data-field="secondaryImage"></div>
                     </div>
                     <div class="work-list_infos">
-                      <h3 class="heading-style-h6 w-dyn-bind-empty"></h3>
-                      <div class="work-list_desc w-dyn-bind-empty"></div>
+                      <h3 class="heading-style-h6 w-dyn-bind-empty" data-field="title"></h3>
+                      <div class="work-list_desc w-dyn-bind-empty" data-field="summary"></div>
                     </div>
                   </a>
                 </div>
               </div>
-              <div class="w-dyn-empty">
-                <div>No items found.</div>
+              <div id="home-works-empty" class="w-dyn-empty" data-cms-empty style="display:none">
+                <div data-cms-empty-message>No items found.</div>
               </div>
             </div>
             <div class="padding-section-xsmall"></div>
@@ -198,19 +199,19 @@
         </div>
         <div class="spacer-xxlarge"></div>
         <div class="brands_list-wrapper">
-          <div class="collection-list-wrapper-4 w-dyn-list">
+          <div class="collection-list-wrapper-4 w-dyn-list" data-cms-list data-json="data/projects.json" data-detail-page="detail_projects.html">
             <div id="projects-list" data-wf-target="[[[&quot;6913625494fc57c08a370781&quot;,&quot;662af0e5-4735-edb0-d042-0eabf083f5ff&quot;],[]]]" role="list" class="collection-list-3 w-dyn-items w-row">
               <div role="listitem" class="collection-item-2 w-dyn-item w-col w-col-2">
-                <a href="#" class="w-inline-block"><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="image-2 w-dyn-bind-empty">
+                <a href="#" class="w-inline-block" data-field="link"><img src="" loading="lazy" alt="" class="image-2 w-dyn-bind-empty" data-field="thumbnail">
                   <div class="brands_item-texts">
-                    <h4 class="brands_item-name w-dyn-bind-empty"></h4>
-                    <p class="brands_item-desc w-dyn-bind-empty"></p>
+                    <h4 class="brands_item-name w-dyn-bind-empty" data-field="title"></h4>
+                    <p class="brands_item-desc w-dyn-bind-empty" data-field="summary"></p>
                   </div>
                 </a>
               </div>
             </div>
-            <div class="w-dyn-empty">
-              <div>No items found.</div>
+            <div id="brand-projects-empty" class="w-dyn-empty" data-cms-empty style="display:none">
+              <div data-cms-empty-message>No items found.</div>
             </div>
           </div>
         </div>
@@ -239,7 +240,7 @@
           </div>
           <div class="footer_legal-links">
             <div id="w-node-_0632acfa-8aaa-b158-7b6a-58a2921af569-921af54a" class="footer_legal-wrap">
-              <div class="footer_copyright">© 2025 Noura</div>
+              <div class="footer_copyright">© 2026 Noura</div>
               <div class="footer_legal-divider"></div>
               <div class="footer_copyright">Powered by <a href="https://webflow.com/" target="_blank" class="footer_template-link">Webflow</a>
               </div>

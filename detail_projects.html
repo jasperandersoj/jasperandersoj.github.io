@@ -17,6 +17,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 </style>
+  <script src="js/cms-detail.js" defer></script>
 </head>
 <body>
   <div class="page-wrapper">
@@ -68,36 +69,29 @@
         </div>
       </div>
     </nav>
-    <main class="main-wrapper">
+    <main class="main-wrapper" data-cms-detail-content data-json="data/projects.json" style="display:none">
       <section>
         <div class="padding-section-medium"></div>
         <div class="padding-global">
           <div>
             <div>
-              <p class="page-title w-dyn-bind-empty"></p>
-              <h3 class="heading-4 w-dyn-bind-empty"></h3>
-              <h5 class="heading-5 w-dyn-bind-empty"></h5>
+              <p class="page-title w-dyn-bind-empty" data-field="projectTypeLabel"></p>
+              <h3 class="heading-4 w-dyn-bind-empty" data-field="title"></h3>
+              <h5 class="heading-5 w-dyn-bind-empty" data-field="summary"></h5>
             </div>
-            <div class="div-block-3"><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="image-3 w-dyn-bind-empty"></div>
+            <div class="div-block-3"><img src="" loading="lazy" alt="" class="image-3 w-dyn-bind-empty" data-field="heroImage"></div>
           </div>
         </div>
       </section>
       <section>
         <div class="padding-global">
-          <div class="padding-section-xsmall"></div>
-          <h5 class="w-dyn-bind-empty"></h5>
-          <div class="div-block-4">
-            <div class="rich-text-block-2 w-dyn-bind-empty w-richtext"></div>
-            <a href="#" class="lightbox-link-2 w-inline-block w-dyn-bind-empty w-lightbox"><img src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" loading="lazy" alt="" class="image-4 w-dyn-bind-empty">
-              <script type="application/json" class="w-json">{
-  "items": [],
-  "group": ""
-}</script>
-            </a>
-          </div>
+          <div data-cms-repeat-container="sections"></div>
         </div>
       </section>
     </main>
+    <div class="padding-global">
+      <p data-cms-not-found hidden role="status">Not found</p>
+    </div>
     <footer class="footer">
       <div class="footer_wrap">
         <div class="footer_component">
@@ -140,5 +134,16 @@
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js" type="text/javascript"></script>
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js" type="text/javascript"></script>
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js" type="text/javascript"></script>
+  <template data-cms-repeat="sections">
+    <section class="project-content-section">
+      <div class="padding-section-xsmall"></div>
+      <h5 class="w-dyn-bind-empty" data-field="title"></h5>
+      <div class="div-block-4">
+        <div class="rich-text-block-2 w-dyn-bind-empty w-richtext" data-field="text" data-format="html"></div>
+        <img src="" loading="lazy" alt="" class="image-4 w-dyn-bind-empty" data-field="thumbnail">
+      </div>
+      <div class="project-gallery" data-field="media" data-field-type="images"></div>
+    </section>
+  </template>
 </body>
 </html>

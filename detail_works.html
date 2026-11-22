@@ -26,6 +26,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 </style>
+  <script src="js/cms-list.js" defer></script>
+  <script src="js/cms-detail.js" defer></script>
 </head>
 <body>
   <div class="page-wrapper">
@@ -77,21 +79,17 @@
         </div>
       </div>
     </nav>
-    <div class="main-wrapper">
+    <div class="main-wrapper" data-cms-detail-content data-json="data/works.json" style="display:none">
       <section class="section_work-header">
         <div class="padding-section-medium"></div>
         <div class="padding-global">
           <div class="container-medium">
             <div class="work-header_component">
               <div class="work-header_head">
-                <div class="work-header_infos">
-                  <div class="work-header_brand">
-                    <div class="page-title w-dyn-bind-empty"></div>
-                  </div>
-                </div>
-                <h1 class="heading-style-h3 is-mobile-h4 w-dyn-bind-empty"></h1>
+                <h1 class="heading-style-h3 is-mobile-h4 w-dyn-bind-empty" data-field="title"></h1>
+                <p class="work-header_desc w-dyn-bind-empty" data-field="summary"></p>
               </div>
-              <div class="work-header_img-wrap"><img loading="lazy" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" alt="" class="work-header_img w-dyn-bind-empty"></div>
+              <div class="work-header_img-wrap"><img loading="lazy" src="" alt="" class="work-header_img w-dyn-bind-empty" data-field="coverImage"></div>
             </div>
           </div>
         </div>
@@ -100,19 +98,19 @@
         <div class="padding-section-medium is-tablet-smaller"></div>
         <div class="padding-global">
           <div class="container-medium">
-            <div class="collection-list-wrapper-2 w-dyn-list">
+            <div class="collection-list-wrapper-2 w-dyn-list" data-cms-list data-json="data/projects.json" data-detail-page="detail_projects.html" data-filter-field="projectType" data-filter-value="current-slug">
               <div role="list" class="flexgrid w-dyn-items">
                 <div role="listitem" class="flexgriditem w-dyn-item">
-                  <a href="#" class="link-block-3 w-inline-block"><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="link-block w-dyn-bind-empty">
+                  <a href="#" class="link-block-3 w-inline-block" data-field="link"><img src="" loading="lazy" alt="" class="link-block w-dyn-bind-empty" data-field="thumbnail">
                     <div class="div-block-2">
-                      <h1 class="heading-2 w-dyn-bind-empty"></h1>
-                      <div class="text-block-2 w-dyn-bind-empty"></div>
+                      <h1 class="heading-2 w-dyn-bind-empty" data-field="title"></h1>
+                      <div class="text-block-2 w-dyn-bind-empty" data-field="summary"></div>
                     </div>
                   </a>
                 </div>
               </div>
-              <div class="w-dyn-empty">
-                <div>No items found.</div>
+              <div id="work-projects-empty" class="w-dyn-empty" data-cms-empty style="display:none">
+                <div data-cms-empty-message>No items found.</div>
               </div>
             </div>
           </div>
@@ -122,28 +120,31 @@
         <div class="padding-section-medium"></div>
         <div class="padding-global">
           <div class="container-tiny">
-            <div class="collection-list-wrapper w-dyn-list">
+            <div class="collection-list-wrapper w-dyn-list" data-cms-list data-json="data/works.json" data-detail-page="detail_works.html" data-exclude-current="true">
               <div role="list" class="w-dyn-items">
                 <div role="listitem" class="w-dyn-item">
-                  <a href="#" class="w-inline-block">
+                  <a href="#" class="w-inline-block" data-field="link">
                     <div class="work-related_infos">
                       <div class="text-block">Looking for more?</div>
                       <div class="pill_wrap">
-                        <div class="text-style-label w-dyn-bind-empty"></div>
+                        <div class="text-style-label w-dyn-bind-empty" data-field="label"></div>
                       </div>
                     </div>
-                    <div class="spacer-small"></div><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="work-related_img w-dyn-bind-empty">
+                    <div class="spacer-small"></div><img src="" loading="lazy" alt="" class="work-related_img w-dyn-bind-empty" data-field="coverImage">
                   </a>
                 </div>
               </div>
-              <div class="w-dyn-empty">
-                <div>No items found.</div>
+              <div id="related-works-empty" class="w-dyn-empty" data-cms-empty style="display:none">
+                <div data-cms-empty-message>No items found.</div>
               </div>
             </div>
           </div>
         </div>
         <div class="padding-section-medium"></div>
       </section>
+    </div>
+    <div class="padding-global">
+      <p data-cms-not-found hidden role="status">Not found</p>
     </div>
     <footer class="footer">
       <div class="footer_wrap">

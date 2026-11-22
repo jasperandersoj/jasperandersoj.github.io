@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "hobbies",
+    "title": "Hobbies",
+    "client": "Hobbies",
+    "label": "Hobbies",
+    "summary": "Passion with less of a finished product.",
+    "order": "3",
+    "coverImage": "images/imgonline-com-ua-CompressToSize-pFjV82ahzgMza.jpg",
+    "secondaryImage": "assets/cms/imgonline-com-ua-CompressToSize-6tqpKtxz0OweUO.jpg"
+  },
+  {
+    "slug": "ongoing-projects",
+    "title": "Ongoing Projects",
+    "client": "Ongoing Projects",
+    "label": "Ongoing Projects",
+    "summary": "Incomplete, but on their way to beauty.",
+    "order": "1",
+    "coverImage": "assets/cms/FirstAssembly.JPEG",
+    "secondaryImage": "assets/cms/imgonline-com-ua-CompressToSize-oW2dvSlBN0pP.jpg"
+  },
+  {
+    "slug": "past-projects",
+    "title": "Past Projects",
+    "client": "Past Projects",
+    "label": "Past Projects",
+    "summary": "Concepts with a little bit more completion.",
+    "order": "2",
+    "coverImage": "assets/cms/header.JPG",
+    "secondaryImage": "images/IMG_9597.JPEG"
+  }
+]

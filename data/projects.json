@@ -1,0 +1,653 @@
+[
+  {
+    "slug": "atlas-star-tracker",
+    "title": "ATLAS Star Tracker",
+    "summary": "A motorized star-tracking mount built for cameras/telescopes. Designed with manufacturing simplicity for astronomy enthusiasts at home.",
+    "tagline": "A low-cost equatorial star-tracking mount designed to be built by hobbyists.",
+    "client": "Class Project",
+    "projectType": "past-projects",
+    "projectTypeLabel": "Past Projects",
+    "featured": true,
+    "roughDate": "Sun Nov 30 2025 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    "thumbnail": "images/FinalProduct1.JPG",
+    "heroImage": "assets/cms/header.JPG",
+    "sections": [
+      {
+        "enabled": true,
+        "title": "Overview",
+        "text": "<p id=\"\">ATLAS aims to decrease barriers to long-exposure astrophotography by providing a low-cost star tracking system for under $250. Designed to compensate for Earth’s rotation, the system features a versatile mount designed for cameras, but adaptable to telescopes. Designed to be manufacturable completely on a 3D Printer, but optionally on a hobbyist CNC&nbsp;router, or even a manual mill.</p><p id=\"\">‍</p><p id=\"\">ATLAS&nbsp;was designed by a 5-person team over an 8-week scrum-style workflow where we exercised iterative and agile design practices.</p><p id=\"\">‍</p><p id=\"\">In order to smoothly track the stars, it’s crucial to be able to make miniscule movements at an extremely slow rate. To accomplish this, I lead the creation of a Cycloidal Drive: An unconventional type of ‘gearbox’ that can provide high gear reductions inline with a shaft, at extremely high precision and with very small amounts of backlash if designed properly.</p>",
+        "thumbnail": "assets/cms/header.JPEG",
+        "media": [
+          "assets/cms/header.JPEG",
+          "assets/cms/pic01.jpg"
+        ]
+      },
+      {
+        "enabled": true,
+        "title": "Mechanical Design",
+        "text": "<p id=\"\">The drive works by turning a flower-shaped ‘gear’ eccentrically, causing it to walk around, meshing with an outer circle of pins, and turning an internal ring of pins. There is conventionally one more pin than there are lobes, which creates a gear ratio of 1:[# lobes]. </p><p id=\"\">‍</p><p id=\"\">For our purposes, I took into account a number of factors. First, the earth rotates at a rate of 0.025 degrees per minute. It's necessary to follow this rotation very closely, to ensure that the star you're interested in stays perfectly centered for long exposure photography. These factors ultimately led me to choose a 180:1 gear reduction, which gives us a rotation rate of 0.01 degrees per step on the stepper motor. We chose to accomplish this ratio through a two-stage reduction. By using a 10:1 drive, inline with an 18:1, we could achieve extremely accurate results without too much additional mechanical complexity.</p>",
+        "thumbnail": "assets/cms/Exploded-View.png",
+        "media": [
+          "assets/cms/Exploded-View.png",
+          "assets/cms/Full-Assembly(1).png"
+        ]
+      },
+      {
+        "enabled": true,
+        "title": "Prototyping & Fabrication",
+        "text": "<p id=\"\">Prototyping was initially done on Prusa MK3 FDM printers to create a final product that would be manufacturable by a decently-equipped hobbyist. A complete two-stage drive could be completed in a matter of hours, and produced a shockingly robust system.</p><p id=\"\">‍</p><p id=\"\">I also manufactured a 1/4\" 6061 Aluminum assembly to validate this aspect of my DFM. The plates were milled on a fixture plate using a MILLPWR&nbsp;G2 2.5 Axis CNC&nbsp;system, and are (carefully) press-fit together using COTS&nbsp;1/4\" dowel pins and bushings.</p>",
+        "thumbnail": "assets/cms/IMG_0157.JPEG",
+        "media": [
+          "assets/cms/IMG_0157.JPEG",
+          "assets/cms/IMG_0143.JPEG",
+          "assets/cms/imgonline-com-ua-CompressToSize-lJl3IG4clgiGQ0vk.jpg",
+          "assets/cms/IMG_9903.JPEG",
+          "assets/cms/IMG_9933(1).JPEG",
+          "assets/cms/_MG_9538.JPG",
+          "assets/cms/ProtoCycloid.JPG"
+        ]
+      },
+      {
+        "enabled": true,
+        "title": "Results & Reflection",
+        "text": "<p>In the end, the mount, and particularly the Cycloidal Drive, performed exceptionally. We were successful in capturing photos of Jupiter and Sirius (click below), tracking the stars over 30s and getting clean results without streaking. A website with greater detail on the project can be found <a href=\"https://jasperandersoj.github.io/pie-2025-03/starglazers/index.html\">here.</a></p><p>‍</p><p>If I could change one design choice, I would revise the assembly process for the plates. Currently, it involves carefully performing ~50 FN2 press-fits. This isn't an issue with the 3D Printed version, however, for the aluminum version it requires a large press. Disassembly becomes a much more difficult process because of this as well. I chose press-fits for the aesthetic opportunity, and knew it would be hard, but I didn't realize how hard. If I had to do it again, I'd sandwich the pins between the plates using a few standoffs to apply pressure</p>",
+        "thumbnail": "assets/cms/vlcsnap-2025-12-30-13h25m10s902.png",
+        "media": [
+          "assets/cms/vlcsnap-2025-12-30-13h25m10s902.png",
+          "assets/cms/imgonline-com-ua-CompressToSize-BsReQa5fen.jpg",
+          "assets/cms/imgonline-com-ua-CompressToSize-uw7JcgByon.jpg"
+        ]
+      }
+    ],
+    "galleryEnabled": false,
+    "gallery": []
+  },
+  {
+    "slug": "cars",
+    "title": "Cars",
+    "summary": "An inconsistent constant in my life, the start of my passion for mechanisms and tinkering. A 1982 Toyota Land Cruiser, and a 1973 Volkswagen Thing.",
+    "tagline": "A labor of love.",
+    "client": "Hobby",
+    "projectType": "hobbies",
+    "projectTypeLabel": "Hobbies",
+    "featured": false,
+    "roughDate": "Sun Nov 30 2025 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    "thumbnail": "assets/cms/IMG_6919(1).JPEG",
+    "heroImage": "assets/cms/IMG_5298.JPEG",
+    "sections": [
+      {
+        "enabled": true,
+        "title": "Overview",
+        "text": "<p>I've always been around cars. As a kid, I helped my dad rebuild 1600cc Volkswagen engines in the garage. The excitement of cruising around town in something you brought back to life, or even just a driving experience that not a lot of people get anymore, is just an unbeatable feeling.</p><p>‍</p><p>My personal affection for working on cars started with the Land Cruiser, but now that I know enough to be dangerous, the biggest victim is my lack of driveway space.</p>",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": true,
+        "title": "1982 Toyota Land Cruiser FJ60",
+        "text": "<p>I fell in love with Land Cruisers before I could even drive, enthralled by the ability to go anywhere. Over 2020, I&nbsp;spent months scouring Facebook Marketplace for deals, and eventually found the Land Cruiser. It had a blown engine with 'good bones', diagnosed with rod-knock, I did my research and decided I could fix it. Over the course of a year and a half, I disassembled the engine, sent parts out for machining, and slowly began reconstructing the beating heart of the car.</p><p>‍</p><p>In Summer 2022, I got things back together and started it up for the first time. It was an incredibly enjoyable car, taking you wherever you'd like to go at a slightly slower pace than you might expect to get there otherwise. It had it's fair share of issues, and over time, I worked my way through a few of them. First rebuilding the steering, then the sound system, and finally the suspension. In Summer 2025, however, it caught up to me. I planned to drive it across the country, and made it as far as the fateful city of Danville, IL, where I blew two pistons. Now, I'm working my way through Engine Rebuild Pt.2, this time thankfully a smaller scoped one. It's my reminder that I'll make plenty of stupid mistakes early on, but that I have the ability to keep learning and correct them eventually.</p>",
+        "thumbnail": "assets/cms/IMG_6919(1).JPEG",
+        "media": [
+          "assets/cms/IMG_6919(1).JPEG",
+          "assets/cms/IMG_6204.JPEG",
+          "assets/cms/IMG_5273.JPEG",
+          "assets/cms/IMG_5735.JPEG"
+        ]
+      },
+      {
+        "enabled": true,
+        "title": "1973 Volkswagen Thing",
+        "text": "<p>The Thing is a joint project between myself and my Dad. It started as a killer deal on a car we've both always loved, a quick 'lets get it and sell it once you graduate', but slowly we fell so deeply in love that it became our first adventure into full-blown restoration. After one long day of complete disassembly into every individual nut, bolt, and washer, we took it to undergo the long process of acid-dipping and bodywork. We're looking forward to starting the slow process of reconstruction this year.</p><p>‍</p><p>A peppy, passionate car, The Thing is unlike any other car I've ever driven. In my eyes, it's a testament to the excitement that an engineer can create, simply with a little bit of whimsy and weirdness in the design process. It inspires me in everything I do.</p>",
+        "thumbnail": "assets/cms/IMG_2161.JPEG",
+        "media": [
+          "assets/cms/IMG_2161.JPEG",
+          "assets/cms/IMG_2987.JPEG",
+          "assets/cms/IMG_4522.JPEG"
+        ]
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      }
+    ],
+    "galleryEnabled": false,
+    "gallery": []
+  },
+  {
+    "slug": "coffee",
+    "title": "Coffee",
+    "summary": "A way to wake up bright in the mornings, but also to experiment with all the variables to create a tasty treat.",
+    "tagline": "Enjoyment in the scientific method.",
+    "client": "Hobby",
+    "projectType": "hobbies",
+    "projectTypeLabel": "Hobbies",
+    "featured": false,
+    "roughDate": "Sat Nov 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    "thumbnail": "assets/cms/IMG_9977.JPEG",
+    "heroImage": "assets/cms/IMG_9975(1).JPEG",
+    "sections": [
+      {
+        "enabled": true,
+        "title": "Overview",
+        "text": "<p>I've been interested in coffee as long as I've had to wake up early in the mornings. But most of the time I spend making coffee isn't on those early mornings. For me, coffee is very much an engineering problem: how can I account for all the changing variables (bean grind size, water temperature, grind distribution, etc), to consistently be able to make a delicious cup? I don't think I'll ever agree that there's a right answer to that question, but the pursuit of trying to answer it can be so much fun. Process and experimentation are at the core of it, developing a stable and consistent methodology to try and reduce all the potential variables, but also working to explore new things and mess around with the assumptions I've made. </p><p>‍</p><p> It started with an old espresso machine that my parents had away in storage, and slowly evolved over time. When I was 16 I saved up for a Rancilio Silvia, a strong and reliable machine known for making great coffee at home. Since then it's been me and my hand grinder against the world. I only get to use the Silvia on the rare occasions I'm at home, but every time I&nbsp;delight in the process. </p><p>At school, I'm a part of Olin's ACRONYM, a club dedicated to bringing free coffee to the school on Wednesday mornings, and for special events. ACRONYM has opened up tons of cool opportunities, from touring a coffee roaster &amp; designing our own blend, to purchasing a monstrous ACS&nbsp;Vostok, a commercial two-group lever machine that's more of an artpiece than anything. As leadership in the club, I'm working to open up equally exciting opportunities to new members, and get the Olin community engaged in the joys of coffee like never before.</p>",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      }
+    ],
+    "galleryEnabled": false,
+    "gallery": []
+  },
+  {
+    "slug": "ev-converted-saab",
+    "title": "EV Converted Saab",
+    "summary": "A once in a lifetime opportunity, would you take it? My journey rebuilding and restoring an EV converted 1972 Saab 96, salvaged for free from Bar Harbor, Maine.",
+    "tagline": "My journey rebuilding and restoring an EV converted 1972 Saab 96.",
+    "client": "Personal Project",
+    "projectType": "ongoing-projects",
+    "projectTypeLabel": "Ongoing Projects",
+    "featured": false,
+    "roughDate": "Wed Oct 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    "thumbnail": "assets/cms/IMG_9768(2).JPEG",
+    "heroImage": "assets/cms/IMG_9775.JPEG",
+    "sections": [
+      {
+        "enabled": true,
+        "title": "The Story",
+        "text": "<p>I thought the age of 'free cars' was well and truly over, there's no way you can get a truly free car anymore, right? The Facebook post seemed to think differently, and after reaching out and meeting Mark, he decided I was a good home for his old project. A 1972 Saab 96 that he had converted to electric in the late 2000s. He was getting too old to work on it much anymore, and it had one big problem: the old motor controller had burned out. He had gotten the replacement, but was getting too old to work on it. After a few tries selling it, he decided to give it away to a caring home. Apparently I'm a good home, because after some discussion, I was on my way to Bar Harbor, Maine, to pick up my new ride. After a 6hr journey, I loaded it up, learned what I could from Mark, and started the journey home. </p><p>‍</p><p>The reason this project appealed to me was largely opportunity: I've always been fascinated by the idea of EV conversion as a way to bring an old, tired car back to life with modern technology. The biggest issue with it is simply cost, the components needed to do a conversion are prohibitively expensive, and it would be extremely difficult for someone like me to afford a project like this. The way I saw it, this project allows me to get my hands dirty working with real, applicable hardware and skills in a way that's hard to do otherwise as a college student. </p>",
+        "thumbnail": "images/IMG_9769.JPEG",
+        "media": [
+          "images/IMG_9769.JPEG"
+        ]
+      },
+      {
+        "enabled": true,
+        "title": "The Plan",
+        "text": "<p>As I started digging into the car, I realized what Mark meant when he said \"I would just tear out all the low-voltage wiring and start fresh\". There were a lot of tangled wires, mouse droppings, and unknown components littered around under the hood. Before I could do anything, I decided to clean out what was already in there. You can see what it looked like in the pictures below.</p><p>‍</p><p>Since the day that I did the big clean-out, I've learned a lot. I learned KiCAD to design an electrical schematic of the intended wiring harness, I have a full inventory of all the components I'm working with and their datasheets, andI have a dream for what the car could look like. As of Winter 2025, I've successfully gotten the motor spinning and the car driving with an 'MVP' wiring setup, but I'm currently working on building a trustable wiring harness for real roadworthiness. Once I finish integrating this harness, and I build a reliable driver, I plan to start reworking the interior to make it comfortable and clean feeling. I also plan to start working with some friends to build an effective interface for the car, designed around the driver, to provide telemetry and data collection, as well as high-tech aesthetics.</p>",
+        "thumbnail": "assets/cms/IMG_9789.JPEG",
+        "media": [
+          "assets/cms/IMG_9789.JPEG",
+          "assets/cms/IMG_9790.JPEG",
+          "assets/cms/IMG_9792.JPEG"
+        ]
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      }
+    ],
+    "galleryEnabled": false,
+    "gallery": []
+  },
+  {
+    "slug": "espresso-machine",
+    "title": "Espresso Machine",
+    "summary": "In the search for a personal espresso machine, nothing quite scratches the itch. My plan for something to meet my needs exactly.",
+    "tagline": "Turning yet another hobby into something completely my own.",
+    "client": "Personal Project",
+    "projectType": "ongoing-projects",
+    "projectTypeLabel": "Ongoing Projects",
+    "featured": false,
+    "roughDate": "Sat Nov 15 2025 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    "thumbnail": "assets/cms/Assembly.png",
+    "heroImage": "",
+    "sections": [
+      {
+        "enabled": true,
+        "title": "Overview",
+        "text": "<p>Since I was 14 I've loved the process of making Espresso and other coffee drinks (you can read about it in my Hobbies page!). I've always been intruigued the idea of making my own machine, as every other machine on the market has some form of shortcoming. Whether it's having to cool the machine to refill it, having to cycle the boiler between brew temperature and steam temperature, or even just having an extremely high price (coffee stuff is expensive!), I can't justify it enough for my use case. I also feel very passionately about lever-operated espresso machines, giving the user more control and feedback on the cup they're brewing.</p><p>‍</p><p>With this in mind, I started plotting about what my ideal machine would actually look like, and whether or not it's acheivable.</p>",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": true,
+        "title": "Requirements & Plan",
+        "text": "<p>With a lot of my pain-points about other machines in mind, I set out the following requirements:</p><ul><li>Must be a dual-boiler machine, to avoid heating/cooling of the boiler between drinks.</li><li>Must be a lever-operated grouphead.</li><li>Must be able to refill the boilers without having to depressurize them.</li><li>Must use food-safe materials that don't impact flavor (no aluminum, leaded stainless).</li><li>Should be fully and reasonably manufacturable in the Olin Shop.</li><li>Should be simple to use, with simple interfaces, but not boring.</li><li>Should have data-recording capabilities (shot pressure, grouphead temp).</li><li>Where applicable, design choices should prioritize mechanical systems rather than electrical/software solutions.</li></ul><p>Because of these requirements, I've adopted a plan for a goofy three-lever design - in order to refill the two boilers without depressurizing, I plan to refill an unpressurized upper reservoir with water, then use two 'extra' levers to force refill water through one-way valves, ensuring no loss of pressure. This could be done with an electronic pump, but that takes all the fun out of it!</p>",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": false,
+        "title": "Design Choices",
+        "text": "<p>Planning out the general form this machine would take, I took inspiration from some of my favorite machines like the La Pavoni Europiccola, the Argos Odyssey, and the Rancilio Silvia. Borrowing some mechanisms from the La Pavoni, taking manufacturing ideas from the Argos, and sourcing some parts from the Rancilio.</p><p>‍</p><p>Because of my design requirements, I've adopted a plan for a goofy three-lever design - in order to refill the two boilers without depressurizing, I plan to refill an unpressurized upper reservoir with water, then use two 'extra' levers to force refill water through one-way valves, ensuring no loss of pressure. This could be done with an electronic pump, but that takes all the fun out of it!</p><p>I've also opted for a design that prioritizes simple, easily manufacturable parts to reduce the chance of scrapped parts, and make use of the Waterjet do to a lot of the heavy lifting. There are still some complex parts like the grouphead, and I'll need to balance precision with the potential distortion caused by welding the boilers, but I think this strikes a really doable balance.</p>",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      }
+    ],
+    "galleryEnabled": false,
+    "gallery": []
+  },
+  {
+    "slug": "hiking-backpack",
+    "title": "Hiking Backpack V2",
+    "summary": "While my first attempt was solid, it lacked personality. This time around, I've got the skills for more custom features.",
+    "tagline": "There are always improvements to be made.",
+    "client": "Personal Project",
+    "projectType": "ongoing-projects",
+    "projectTypeLabel": "Ongoing Projects",
+    "featured": false,
+    "roughDate": "Tue Dec 31 2024 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    "thumbnail": "assets/cms/IMG_6602(1).JPEG",
+    "heroImage": "",
+    "sections": [
+      {
+        "enabled": true,
+        "title": "Overview",
+        "text": "<p>Reflecting on V1 (go read more about that in Past Projects!), I was satisfied with the result for my first time making something like this, but felt like it was lacking a lot. There are a lot of existing backpack patterns available online very similar to mine, but part of the appeal of custom patterning is that it allows you to perfectly fit your needs. As a whole, I'm seeking to improve robustness and polish, while adding fixes for the pain-points I've noticed while using the existing pack.</p><p>‍</p><p>So far I've completed one iteration of patterning, but I'm dissatisfied with the overall shape the pack took. As such, I'm currently working on revising the pattern to fit my needs better, before I move into the physical prototyping phase.</p>",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": true,
+        "title": "Big Changes & Design Requirements",
+        "text": "<p>Overall, I'm seeking to design a 35-40L pack, with an expanding roll-top adding the ability to grow it to 55L when needed. It will be frameless, using a foam pad for most of it's structure, and have a ton more external mounting points than V1, allowing for way more flexibility in packing style. The idea is that this is primarily a hiking backpack, with the ability to be used for longer trips in 'civilization' as well, with intentional space for a laptop and documents, as well as an ice tool, for instance.</p><p>‍</p><p>Notably, my packing style doesn't really fit the \"one big opening at the top\" method that I used on that pack. I prefer to be able to pull out my sleep system from the bottom without completely unpacking. It's also hard to stay organized without packing cubes or stuff sacks. Instead, I'm seeking to add a one-sided vertical zipper, giving access to the deeper parts of the pack without entirely dumping the contents.</p><p>‍</p><p>I also needed a way to organize smaller things, like snacks, so I'm planning a mesh pocket on the bottom of the pack, and thin ones inside the main compartment against the backplane. I also want to add a discreet zippered map/passport pocket that's zippered into the backplane, making those things accessible while hiking.</p><p>‍</p>",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      }
+    ],
+    "galleryEnabled": false,
+    "gallery": []
+  },
+  {
+    "slug": "hopper",
+    "title": "Hopper",
+    "summary": "A fully mechanical hopping toy, designed with a mechanical delay. Built robustly with simple tools.",
+    "tagline": "Setup, pause, and launch! A fully mechanical hopping toy, designed with basic materials.",
+    "client": "Class Project",
+    "projectType": "past-projects",
+    "projectTypeLabel": "Past Projects",
+    "featured": false,
+    "roughDate": "Tue Oct 01 2024 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    "thumbnail": "assets/cms/PJV_1824.JPG",
+    "heroImage": "assets/cms/IMG_5860.JPEG",
+    "sections": [
+      {
+        "enabled": true,
+        "title": "Ideation and Sketching",
+        "text": "<p>In the first year Hopper Project at Olin College of Engineering, students build a jumping contraption inspired by nature and refine it through rapid prototyping.</p><p>‍</p>",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": true,
+        "title": "Prototyping & Fabrication",
+        "text": "<p>To test my design, I started with a simple 'sketch model' constructed from cardboard and rubber bands. This gave me confidence that the kinematics of my hopper were actually reasonable, and allowed me to move on to a more refined laser-cut Eucaboard and rubber hose version. This prototype included adjustable dowel positions, which allowed me to experimentally determine whether pure energy storage was important, or if there was a mounting location component to the overall jump height.</p><p>‍</p><p>Ultimately, I determined the most relevant component to the jumping height was the amount of stretch of the rubber hose, which led me to extend the 'wings' of my finished version. I also compensated for the greater mass with topology-optimized lightweighting. This also produced a more 'scaly' bug inspired final product.</p>",
+        "thumbnail": "assets/cms/IMG_5545.JPEG",
+        "media": [
+          "assets/cms/IMG_5545.JPEG",
+          "assets/cms/IMG_5793(1).JPEG"
+        ]
+      },
+      {
+        "enabled": true,
+        "title": "Reflection",
+        "text": "<p>Overall, the Hopper turned out really well. It ended up as a robust toy with a consistent delay on flat surfaces. It could repeatably reach a ~15ft ceiling, and survives (usually) even if you don't catch it. This project was meant to make us start from the basics, and I feel really proud of what I was able to do.</p><p>‍</p><p>If I were to redo this project, I think I would reach for the stars a little more. I chose to work towards a more polished final product, but the mechanism is ultimately very simple. There's nothing wrong with this, but more exploration and risk-taking can teach you a lot.</p>",
+        "thumbnail": "images/PJV_1834.JPG",
+        "media": [
+          "images/PJV_1834.JPG",
+          "assets/cms/PJV_1824.JPG",
+          "assets/cms/IMG_5886(1).JPEG"
+        ]
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      }
+    ],
+    "galleryEnabled": false,
+    "gallery": []
+  },
+  {
+    "slug": "outdoors",
+    "title": "Outdoors",
+    "summary": "Hiking, Camping, Backpacking, Exploring. Whatever you want to call it, I love to be out doing it. Slowly learning more and exploring more places and things. Next up: Mountaineering.",
+    "tagline": "My reason for being on the Earth is to see it.",
+    "client": "Hobby",
+    "projectType": "hobbies",
+    "projectTypeLabel": "Hobbies",
+    "featured": false,
+    "roughDate": "Sat Nov 08 2025 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    "thumbnail": "images/imgonline-com-ua-CompressToSize-pFjV82ahzgMza.jpg",
+    "heroImage": "assets/cms/6955bc24f2d41978299a76f2_compressed_0344279204-R1-036.jpg",
+    "sections": [
+      {
+        "enabled": true,
+        "title": "Overview",
+        "text": "<p>I've grown up in the outdoors. From backyard nights camping in a tent, to frigid rainstorms spent mopping water from my tent floor, to long nights under the stars in the backcountry. When I get a chance to get away for a little while, I like to spend it outdoors. My favorite is backpacking, there's something about spending weeks at a time in the wilderness, living off whatever you're carrying on your back - you can get so much deeper into nature than you'd ever think possible. </p><p>I've spent the most time in the Northern NM Sangre de Cristo Mountains, around Carson National Forest and Santa Fe National Forest. But I also grew up around the Appalaichans of NC, especially around Pisgah National Forest.</p><p>‍</p><p>Notably, in summers of 2025 and 2026, I worked as a Trail Crew Foreman in New Mexico. I spent two-week hitches teaching the tools/techniques of trailbuilding to 16-20 year olds at a backcounty 'spike' site for one week, then backpacking around the region with them for the following week. Next in my journey, I'm interested in pursuing Mountaineering, building on my outdoor skills to explore higher and steeper peaks and areas.</p>",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      }
+    ],
+    "galleryEnabled": true,
+    "gallery": [
+      "images/8248759456848458844.JPEG",
+      "assets/cms/Screenshot_20250620_202257_Gallery_Original.JPEG",
+      "assets/cms/IMG_9169.JPG",
+      "assets/cms/IMG_8999.JPEG",
+      "assets/cms/IMG_8558.JPEG",
+      "assets/cms/IMG_8642.JPEG",
+      "assets/cms/20250616_054815_Original.JPEG",
+      "assets/cms/IMG_1859.JPEG",
+      "assets/cms/IMG_8375.JPEG",
+      "assets/cms/IMG_8781.JPEG",
+      "assets/cms/IMG_9135.JPEG"
+    ]
+  },
+  {
+    "slug": "photography",
+    "title": "Photography",
+    "summary": "Documentation for where I've been, experimentation with film development, and a trip into the world of camera repair. Something I do on the side.",
+    "tagline": "Photos, film, development, and cameras.",
+    "client": "Hobby",
+    "projectType": "hobbies",
+    "projectTypeLabel": "Hobbies",
+    "featured": false,
+    "roughDate": "Sat Nov 22 2025 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    "thumbnail": "assets/cms/Outdoors1.JPEG",
+    "heroImage": "assets/cms/0346279206-R1-029.JPEG",
+    "sections": [
+      {
+        "enabled": true,
+        "title": "Background",
+        "text": "<p>Photography is the biggest way that I explore personal expression through art. I find it to be a fantastic way to bridge my passion for the outdoors/adventure with my love of art. I shoot a mix of film and digital depending on the adventure, and largely have my eye drawn to the beautiful places I find myself in, although I enjoy taking photos in almost any style.</p><p>‍</p><p>Outside of this, too, I also have a fascination with cameras and the physical processes behind the art of photography. I have a vintage camera collection, and I love to get my hands dirty with camera repair as well as film development at home.</p>",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      }
+    ],
+    "galleryEnabled": true,
+    "gallery": [
+      "assets/cms/compressed_0346279206-R1-027.jpg",
+      "assets/cms/compressed_Color-1-29.JPEG",
+      "assets/cms/695588b81f6c53aa896d0be7_compressed_0344279204-R1-036.jpg",
+      "assets/cms/compressed_0345279205-R1-030.jpg",
+      "assets/cms/compressed_Color-1-33.JPEG",
+      "assets/cms/compressed_Color-2-19.JPEG",
+      "assets/cms/compressed_0345279205-R1-008.jpg",
+      "assets/cms/compressed_0347279207-R1-037.jpg",
+      "assets/cms/compressed_0347279207-R1-008.jpg",
+      "assets/cms/compressed_Class-roll-and-Mountains_0010.JPEG",
+      "assets/cms/compressed_FED-Utah_0019.JPEG",
+      "assets/cms/compressed_FED-Utah_0024.JPEG",
+      "assets/cms/compressed_0346279206-R1-015.jpg",
+      "assets/cms/compressed_FED-Utah_0021.JPEG",
+      "assets/cms/compressed_0346279206-R1-029.JPEG"
+    ]
+  },
+  {
+    "slug": "olin-baja",
+    "title": "Baja Off-Road Racecar",
+    "summary": "A collection of my contributions to the Olin Baja SAE team. First as a member of the Suspension subteam, and then as the Suspension Team Lead.",
+    "tagline": "A collection of my contributions to the Olin Baja SAE team.",
+    "client": "Olin Baja SAE",
+    "projectType": "past-projects",
+    "projectTypeLabel": "Past Projects",
+    "featured": true,
+    "roughDate": "Sat Nov 29 2025 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    "thumbnail": "images/IMG_9597.JPEG",
+    "heroImage": "images/396A7117.jpg",
+    "sections": [
+      {
+        "enabled": true,
+        "title": "Front Knuckle",
+        "text": "<p>Olin Baja is a student-run team where we develop an off-road racecar from the chassis up to compete in the Baja SAE competition. I have been on the team for 3 years where I have taken on a variety of roles and projects. As the team's current Suspension Lead, I own the suspension architecture, and oversee the successful execution of it's design &amp; manufacturing as we accelerate our production cycle from 2 years to only 1 year.</p><p>‍</p><p>For my first project on the team, I was tasked with designing the next-generation Front Knuckle, a component that connects the front suspension to the wheels and steering system. This design juggles a littany of design requirements surrounding the kinematics of the front assembly, interface requirements with other subteams, and the need for a Design for Manufacture shape that would allow us to bring manufacturing in-house. </p><p>‍</p><p>As I iterated, I validated the design through 3 MATLAB&nbsp;simulated load cases, simulating a simple road bump, the landing from a jump, and the impact from running into a tree. While the front assembly contains a number of mechanical 'fuses' to prevent direct impact for the Knuckle, this design survived all three. Through a series of 5 major iterations, countless FEA runs, and many small tweaks to prevent interference, this design was eventually completed. This knuckle successfully achieves a number of feats: it brings our KPI from 12deg to 7.5deg, provides a max steering angle of 40deg, weighs 25% less than it's predeccesor, and reaches nearly zero inches of scrub radius.</p><p>‍</p><p>Because it was designed for in-house manufacture, I also took on the task of machining it. Pictures from that process can be found by clicking on the image below. It was designed to be pedestal machined from a billet blank, using a mixture of hand-machining and 2.5 Axis CNC on a Bridgeport mill. This process taught me so much more about DFM than any amount of speculation behind a computer screen could. I ran into a number of hiccups: a machine crash and an un-trammed mill scrapped two parts, but thankfully the last two came out cleanly. I'm proud to say I built this piece of the car from the ground-up.</p>",
+        "thumbnail": "images/IMG_9597.JPEG",
+        "media": [
+          "assets/cms/25S-132-01.jpeg",
+          "assets/cms/IMG_9546.JPEG",
+          "images/IMG_9597.JPEG",
+          "assets/cms/IMG_9531.JPEG",
+          "assets/cms/IMG_9595(1).JPEG",
+          "assets/cms/Screenshot-2025-04-05-142058.png"
+        ]
+      },
+      {
+        "enabled": true,
+        "title": "Front Assembly",
+        "text": "<p>Once I had completed the design of the Front Knuckle, I took on the mantle of designing the majority of the rest of the Front Suspension. Including the A-Arms, Tie Rod, wheel hub, and braking system. Notable acheivements include reduction of wheel hub mass by 35%, designing the brake rotor to be manufactured in-house rather than purchased, and designing the front assembly to be fully rebuildable in around 20 minutes. I also manufactured most of these components, using 2.5 axis CNC&nbsp;for the wheel hubs, CNC&nbsp;Lathe to quickly produce the A-Arm spherical bearing cups, and waterjet/surface grinder for the brake rotors and brake caliper mounts.</p><p>‍</p><p>I learned a lot from this project, I took it on at a time that the team was suffering from a serious amount of knowledge loss, and I was able to start rebuilding that knowledge base. Looking back, there are a ton of improvements I would make to this front suspension, specifically in terms of the design process. This suspension architecture was thrown together and analyzed poorly, while it survived competition without flinching, and has performed exceedingly well, there were a number of design choices made without knowing their true impact or value. As I grow further in my Suspension career, I've built up a laundry list of key revisions to make on the upcoming car in order to optimize our competitive ability, and ensure the mistakes of the past aren't repeated.</p>",
+        "thumbnail": "assets/cms/Screenshot-2025-04-05-140933.png",
+        "media": [
+          "assets/cms/Screenshot-2025-10-27-165329.png",
+          "assets/cms/IMG_9908.JPEG",
+          "assets/cms/IMG_9909.JPEG"
+        ]
+      },
+      {
+        "enabled": true,
+        "title": "Looking Forward...",
+        "text": "<p>As Olin Baja enters a new design phase, I have taken on the system-level architecture for the upcoming front and rear suspension. Working from design goals and requirements set by the leadership team, I've been developing the geometry and desired drive dynamics in OnShape, and analyzing the suspension kinematics in Lotus SHARK to ensure expected behavior. Looking towards the further future, I'm also developing processes for the team to analyze vehicle dynamics as a whole, rather than just kinematics.</p><p>‍</p><p>Specific design requirements we've chosen to optimize for:</p><ul><li>Significant wheel recession in bump, reducing the loads caused by front-on impacts.</li><li>Double wishbone rear suspension (previously trailing arm).</li><li>Ackermann steering geometry.</li><li>More manufacturable assembly as a whole, to allow for more production of spare parts.</li></ul>",
+        "thumbnail": "assets/cms/Screenshot-2026-10-10-184120.png",
+        "media": [
+          "assets/cms/Screenshot-2026-10-10-184120.png"
+        ]
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      }
+    ],
+    "galleryEnabled": false,
+    "gallery": []
+  },
+  {
+    "slug": "the-hidden-garden",
+    "title": "The Hidden Garden",
+    "summary": "A surprising exploration into product design, marketing, and product-market fit analysis.",
+    "tagline": "What does it take to make a product for a user group?",
+    "client": "Class Project",
+    "projectType": "past-projects",
+    "projectTypeLabel": "Past Projects",
+    "featured": false,
+    "roughDate": "Tue Apr 01 2025 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    "thumbnail": "assets/cms/691167d4a3d7e3f2bf732906_46A6BA69-E387-419E-9D85-5B39DEECFFED_1_105_c.jpeg",
+    "heroImage": "assets/cms/IMG_7660.JPEG",
+    "sections": [
+      {
+        "enabled": true,
+        "title": "Overall Goals",
+        "text": "<p>The goal of the Hidden Garden project was to design an approachable and engaging way for college students to connect with plants through a user centered, collectible “grow a garden” mystery kit. Working with a team of six, I helped develop the concept, performed user research, and lead design iterations from early brainstorming to a tested, producible product. Each kit included a small pot, soil, seeds, a shovel, and a surprise character that represented the type of plant that the user had gotten.</p>",
+        "thumbnail": "assets/cms/Screenshot-2026-10-10-174823.png",
+        "media": [
+          "assets/cms/Screenshot-2026-10-10-174823.png",
+          "assets/cms/Screenshot-2026-10-10-174224.png"
+        ]
+      },
+      {
+        "enabled": true,
+        "title": "Plan, Process, and Findings",
+        "text": "<p>The Hidden Garden consisted of two main phases of product testing, each following the same structure. In the first phase, we sought to prove a basis of product-market fit between our concept and the target audience of \"Environmentally Friendly College Students\". In order to do this, the team developed a simple MVP kit with simple packaging, containing a kit for growing an included seed. Instead of simply testing whether people would purchase our kit, we looked to uncover more information about our customer base by performing an A-B test: would people prefer a kit without mystery? Or would they prefer a kit with the mystery figure/seed?</p><p>‍</p><p>Through local pop-up sales on nearby college campuses, we saw a clear trend: mystery is what draws the most interest. So in our next phase, we developed a more polished, purely mystery-based kit. To continue gleaning information, we performed a similar experiment, but this time varying price, attempting to uncover what value our market is willing to assign to the product. We found our initial $12 price had been excluding a large portion of sales that we attributed to impulse-purchases. By lowering our price to $5 per kit, we were able to sell 40 kits, with $3.40 cost per kit. </p><p>‍</p><p>The Hidden Garden was a fun foray into what it takes to optimize a product for a customer, and though we only took the first beginning steps into understanding true product design, this idea showed true potential with our target market, and produced tangible profits with considerably low effort. Looking towards future work, it would be fascinating to take this project even just one step further: looking towards what it would take to scale further, what parts of our kit were neccesary vs. nice to have, and how we could've gotten our name just a little further out there.</p>",
+        "thumbnail": "assets/cms/Screenshot-2026-10-10-175823.png",
+        "media": [
+          "assets/cms/Screenshot-2026-10-10-175823.png",
+          "assets/cms/Screenshot-2026-10-10-175909.png"
+        ]
+      },
+      {
+        "enabled": false,
+        "title": "Section 3",
+        "text": "<p>Section 3 content</p>",
+        "thumbnail": "assets/cms/MachiningKnolled.JPEG",
+        "media": [
+          "assets/cms/IMG_9933(1).JPEG"
+        ]
+      },
+      {
+        "enabled": false,
+        "title": "Section 4",
+        "text": "<p>Section 4 content</p>",
+        "thumbnail": "images/FinalProduct1.JPG",
+        "media": [
+          "assets/cms/FirstAssembly.JPEG"
+        ]
+      }
+    ],
+    "galleryEnabled": true,
+    "gallery": [
+      "assets/cms/Screenshot-2026-10-10-180600.png",
+      "assets/cms/Screenshot-2026-10-10-180606.png",
+      "assets/cms/Screenshot-2026-10-10-180550.png",
+      "assets/cms/Screenshot-2026-10-10-180538.png",
+      "assets/cms/Screenshot-2026-10-10-180513.png",
+      "assets/cms/Screenshot-2026-10-10-175909.png",
+      "assets/cms/Screenshot-2026-10-10-175823.png",
+      "assets/cms/Screenshot-2026-10-10-174823.png",
+      "assets/cms/Screenshot-2026-10-10-174224.png",
+      "assets/cms/Screenshot-2025-04-17-114133.png"
+    ]
+  },
+  {
+    "slug": "ultralight-backpack",
+    "title": "Ultralight Backpack",
+    "summary": "An adventure into engineering the gear I take outdoors. A project I undertook to understand more about the gear I carry with me, and make something wholly personalized.",
+    "tagline": "A foray into outdoor gear design and creation.",
+    "client": "Personal Project",
+    "projectType": "past-projects",
+    "projectTypeLabel": "Past Projects",
+    "featured": false,
+    "roughDate": "Sat Nov 29 2025 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    "thumbnail": "assets/cms/Blank-White-Square-Template.png",
+    "heroImage": "assets/cms/wideboy.png",
+    "sections": [
+      {
+        "enabled": true,
+        "title": "Sketching & Ideation",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      },
+      {
+        "enabled": true,
+        "title": "Design & Fabrication",
+        "text": "<p>In order to create a pattern that could be used to construct the bag, I created a set of parametric drawings in SolidWorks based off of a spreadsheet of body measurements and desired dimensions that I could adjust. This allowed me to dynamically change the proportions of the bag, in order to suit the volume and form factor that I wanted.</p><p>‍</p><p>When it came time to fabricate, I was able to print out the large panel templates on a poster printer, then trim and trace onto the raw material. From here it was a matter of slowly assembling, taking care to work in an order that was actually manufacturable. For the foam-padded hip belt and shoulder straps, I sewed most of the piece inside-out, then unrolled them onto the foam padding. This then gave one raw edge, which could be hidden in the seam of the bag. Attatching the webbing to the hip and shoulder belts proved difficult, however, as it required my consumer sewing machine to press through two layers of foam, along with the thick 3D Mesh fabric. This consistently snapped threads and messed with my machine's tension. These are probably the weakest points on the bag, as the stitching I was able to do is inconsistent and not as reinforced as I'd like.</p>",
+        "thumbnail": "assets/cms/IMG_6581.JPEG",
+        "media": [
+          "assets/cms/Blank-White-Square.png",
+          "assets/cms/IMG_6580(1).JPEG",
+          "assets/cms/IMG_6581.JPEG",
+          "assets/cms/White-Square-Template.png"
+        ]
+      },
+      {
+        "enabled": true,
+        "title": "Reflection",
+        "text": "<p>As a whole, I feel really happy with how this project turned out, and it's super cool to have a bag I can look at while I'm using it and think \"I made that myself\". It's served a great use as a large daypack, weekend trip bag, and just a big ol' stuff sack. That's part of where my dissatisfaction with it lies, however, it's not the long-term backpacking trip machine I built it to be, at least not just yet.</p><p>‍</p><p>I throw the bag around a lot and generally try and stress-test it like an average consumer might expect to be able to with an off-the-shelf bag, and it holds up really well. My big concern, is just with longevity under real load. Like I mentioned, the stitching for the hip and shoulder belts is fairly sketchy, and I only learned the proper techniques for sewing mesh <em>after </em>I had sewn all the mesh on. The whole thing is just a little rough around the edges, and that makes me scared to take it on a real trip where my equipment matters to the success of the trip. I'm working my way up to that, but it means I'm thinking a lot about this bag's successor.</p><p>‍</p><p>I'm designing V2, and there are a lot of big structural changes I'm planning (check those out in 'Ongoing Projects'), but also a lot of small technical changes I'm going to make for structural improvement. A big one is to do a more 'rightside out' strategy with the hip and shoulder straps. I plan to use Grosgrain ribbon or similar to hide the rough edges, and sandwich the foam inside for greater seam strength. I also want to use less foam - I went kinda crazy with it in the name of comfort. I'd also create a full, removable hip belt, which would mitigate the flappy hip-belt connections to the body, and just give the user more support. Finally, I'd switch to a more resilient mesh, the one I used is more intended for leggings than a ice-axe or stray tree branches.</p>",
+        "thumbnail": "assets/cms/Blank-White-Square-Template2.png",
+        "media": [
+          "assets/cms/Blank-White-Square-Template.png",
+          "images/Blank-White-Square-Template1.png",
+          "assets/cms/Blank-White-Square-Template2.png"
+        ]
+      },
+      {
+        "enabled": false,
+        "title": "",
+        "text": "",
+        "thumbnail": "",
+        "media": []
+      }
+    ],
+    "galleryEnabled": false,
+    "gallery": []
+  }
+]
