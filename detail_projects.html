@@ -140,10 +140,21 @@
       <h5 class="w-dyn-bind-empty" data-field="title"></h5>
       <div class="div-block-4">
         <div class="rich-text-block-2 w-dyn-bind-empty w-richtext" data-field="text" data-format="html"></div>
-        <img src="" loading="lazy" alt="" class="image-4 w-dyn-bind-empty" data-field="thumbnail">
+        <button type="button" class="project-gallery-cover" data-field="thumbnail" data-field-type="gallery-cover" data-gallery-field="media">
+          <img src="" loading="lazy" alt="">
+          <span class="project-gallery-cover_label">View gallery</span>
+        </button>
       </div>
-      <div class="project-gallery" data-field="media" data-field-type="images"></div>
     </section>
   </template>
+  <dialog class="cms-lightbox" data-cms-lightbox aria-label="Project image gallery">
+    <button type="button" class="cms-lightbox_close" data-lightbox-close aria-label="Close gallery">×</button>
+    <button type="button" class="cms-lightbox_control cms-lightbox_previous" data-lightbox-previous aria-label="Previous image">‹</button>
+    <figure class="cms-lightbox_figure">
+      <img data-lightbox-image alt="">
+      <figcaption data-lightbox-caption></figcaption>
+    </figure>
+    <button type="button" class="cms-lightbox_control cms-lightbox_next" data-lightbox-next aria-label="Next image">›</button>
+  </dialog>
 </body>
 </html>
